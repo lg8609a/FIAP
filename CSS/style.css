@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+body, html {
+    background-color: grey;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    background-color: white;
+    width: 250px;
+    height: 520px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px;
+
+    transition: width .3s, height .3s; 
+    transition-timing-function: ease;
+
+}
+
+section#login > div#imagem {
+    display:block;
+    background: grey url(../Imagens/imagem_login.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+div#formulario > p {
+    font-size: .8em;
+
+}
+
+form > div.campo {
+    background-color: rgb(162, 171, 179);
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > input {
+    background-color: lightgrey;
+    font-size: 1em;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+form > input[type=submit]:hover {
+    background-color: rgb(52, 52, 52);
+
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: rgb(255, 253, 253);
+    color: black;
+    border: 1px solid grey;
+    border-radius: 7px;
+    text-decoration: none;
+
+}
+
+form > a.botao:hover {
+    background-color: rgb(186, 185, 185);
+}
